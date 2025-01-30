@@ -1,0 +1,75 @@
+﻿ /* Contenedor principal de la calculadora */
+ .calculadora {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Pantalla de la calculadora */
+#pantalla {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Contenedor de botones */
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Estilo general de los botones */
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilo para botones de operadores */
+.operador {
+    background-color: #ff9500;
+    color: white;
+}
+
+.operador:hover {
+    background-color: #ff8000;
+}
+
+/* Estilo para el botón igual */
+.igual {
+    background-color: #2196F3;
+    color: white;
+}
+
+.igual:hover {
+    background-color: #1976D2;
+}
+
+/* Estilo para botones de borrar y retroceso */
+.borrar, .retroceso {
+    background-color: #f44336;
+    color: white;
+}
+
+.borrar:hover, .retroceso:hover {
+    background-color: #d32f2f;
+}
